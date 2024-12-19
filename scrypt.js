@@ -99,9 +99,36 @@
 //     i++
 //   }
 
-let userNumber;
- do {
-    userNumber = prompt('enter a number above 100!', '');
- }
-while (userNumber <= 100 && userNumber);
+// let userNumber;
+//  do {
+//     userNumber = prompt('enter a number above 100!', '');
+//  }
+// while (userNumber <= 100 && userNumber);
 
+
+switch (browser) {
+   case 'Edge':
+     alert( "You've got the Edge!" );
+     break;
+ 
+   case 'Chrome':
+   case 'Firefox':
+   case 'Safari':
+   case 'Opera':
+     alert( 'Okay we support these browsers too' );
+     break;
+ 
+   default:
+     alert( 'We hope that this page looks ok!' );
+ }
+
+ if (browser = 'edge') {
+   alert( "You've got the Edge!" );
+ } else if(browser = 'chrome' || 'firefox' || 'safari' || 'opera' ){
+   alert( 'Okay we support these browsers too' );
+ }
+
+   else {
+alert( 'We hope that this page looks ok!' );
+   } 
+ 
