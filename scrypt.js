@@ -106,29 +106,52 @@
 // while (userNumber <= 100 && userNumber);
 
 
-switch (browser) {
-   case 'Edge':
-     alert( "You've got the Edge!" );
-     break;
+// switch (browser) {
+//    case 'Edge':
+//      alert( "You've got the Edge!" );
+//      break;
  
-   case 'Chrome':
-   case 'Firefox':
-   case 'Safari':
-   case 'Opera':
-     alert( 'Okay we support these browsers too' );
-     break;
+//    case 'Chrome':
+//    case 'Firefox':
+//    case 'Safari':
+//    case 'Opera':
+//      alert( 'Okay we support these browsers too' );
+//      break;
  
-   default:
-     alert( 'We hope that this page looks ok!' );
- }
+//    default:
+//      alert( 'We hope that this page looks ok!' );
+//  }
 
- if (browser = 'edge') {
-   alert( "You've got the Edge!" );
- } else if(browser = 'chrome' || 'firefox' || 'safari' || 'opera' ){
-   alert( 'Okay we support these browsers too' );
- }
+//  if (browser = 'edge') {
+//    alert( "You've got the Edge!" );
+//  } else if(browser = 'chrome' || 'firefox' || 'safari' || 'opera' ){
+//    alert( 'Okay we support these browsers too' );
+//  }
 
-   else {
-alert( 'We hope that this page looks ok!' );
-   } 
+//    else {
+// alert( 'We hope that this page looks ok!' );
+//    } 
  
+// function playStation() {
+//     alert('do u want to play games?')
+// }
+
+// playStation();
+
+// // let x = myFunction(4, 3);
+
+function myFunction(a, b) {
+// Function returns the product of a and b
+  alert(a * b)
+}
+myFunction(2, 5);
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+    
+  }
+  
+//   let value = toCelsius(77);
+let text = "The temperature is " + toCelsius(77) + " Celsius";
+ 
+alert(text)
