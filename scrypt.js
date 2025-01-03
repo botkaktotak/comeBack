@@ -140,18 +140,74 @@
 
 // // let x = myFunction(4, 3);
 
-function myFunction(a, b) {
-// Function returns the product of a and b
-  alert(a * b)
-}
-myFunction(2, 5);
+// function myFunction(a, b) {
+// // Function returns the product of a and b
+//   return(a * b)
+// }
+// console.log(myFunction(2, 5));
 
-function toCelsius(fahrenheit) {
-    return (5/9) * (fahrenheit-32);
+// function toCelsius(fahrenheit) {
+//     return (5/9) * (fahrenheit-32);
     
-  }
+//   }
   
-//   let value = toCelsius(77);
-let text = "The temperature is " + toCelsius(77) + " Celsius";
+// //   let value = toCelsius(77);
+// let text = "The temperature is " + toCelsius(77) + " Celsius";
  
-alert(text)
+// console.log(text);
+
+// function makeMoney(a, b) {
+//   return (a + b )
+// }
+
+// console.log(makeMoney(150, 150));
+
+
+// function minNumber (a,b) {
+
+//   if (a < b) {
+//     console.log(a);
+    
+//   } else {
+//     console.log(b);
+    
+//   }
+
+// }
+
+// minNumber(1, 5)
+
+
+
+// function pow(x, n) {
+//   return (x**n)
+// }
+
+// console.log(pow(3, 3));
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+function showOk() {
+  alert( "Вы согласны." );
+}
+
+function showCancel() {
+  alert( "Вы отменили выполнение." );
+}
+
+// использование: функции showOk, showCancel передаются в качестве аргументов ask
+ask("Вы согласны?", showOk, showCancel);
+// Аргументы showOk и showCancel функции ask называются функциями-колбэками или просто колбэками
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Вы согласны?",
+  function() { alert("Вы согласились."); },
+  function() { alert("Вы отменили выполнение."); }
+);
