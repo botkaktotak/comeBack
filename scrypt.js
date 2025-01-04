@@ -185,29 +185,47 @@
 
 // console.log(pow(3, 3));
 
-function ask(question, yes, no) {
-  if (confirm(question)) yes()
-  else no();
-}
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
 
-function showOk() {
-  alert( "Вы согласны." );
-}
+// function showOk() {
+//   alert( "Вы согласны." );
+// }
 
-function showCancel() {
-  alert( "Вы отменили выполнение." );
-}
+// function showCancel() {
+//   alert( "Вы отменили выполнение." );
+// }
 
-// использование: функции showOk, showCancel передаются в качестве аргументов ask
-ask("Вы согласны?", showOk, showCancel);
-// Аргументы showOk и showCancel функции ask называются функциями-колбэками или просто колбэками
-function ask(question, yes, no) {
-  if (confirm(question)) yes()
-  else no();
-}
+// // использование: функции showOk, showCancel передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+// // Аргументы showOk и showCancel функции ask называются функциями-колбэками или просто колбэками
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
 
-ask(
-  "Вы согласны?",
-  function() { alert("Вы согласились."); },
-  function() { alert("Вы отменили выполнение."); }
-);
+// ask(
+//   "Вы согласны?",
+//   function() { alert("Вы согласились."); },
+//   function() { alert("Вы отменили выполнение."); }
+// );
+
+// // rewrite code with arrow function
+// function ask(question, yes, no) {
+//   if (confirm(question)) yes()
+//   else no();
+// }
+
+// ask(
+//   "Вы согласны?",
+//   () => { alert("Вы согласились."); },
+//   () => { alert("Вы отменили выполнение."); }
+// );
+
+// let num = n => n*2
+
+// console.log(num(8));
+
+// arrow function!!!
